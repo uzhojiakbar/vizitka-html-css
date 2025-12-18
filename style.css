@@ -1,0 +1,280 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #2d3748 0%, #1e293b 100%);
+  padding: 50px 30px 40px;
+  text-align: center;
+  color: white;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 17px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.info-section {
+  margin-bottom: 28px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eef2f6;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item:hover {
+  color: #2d3748;
+}
+
+.info-item i {
+  width: 36px;
+  font-size: 16px;
+  color: #64748b;
+  margin-right: 12px;
+}
+
+.info-item span {
+  font-size: 15px;
+  color: #475569;
+}
+
+.about-section,
+.skills-section,
+.social-section {
+  margin-bottom: 28px;
+}
+
+.about-section h3,
+.skills-section h3,
+.social-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.about-section h3::before,
+.skills-section h3::before,
+.social-section h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background: #2d3748;
+  border-radius: 2px;
+}
+
+.about-section p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 13.5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: #2d3748;
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.facebook {
+  background: #1877f2;
+}
+.twitter {
+  background: #1da1f2;
+}
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+.linkedin {
+  background: #0077b5;
+}
+.github {
+  background: #333;
+}
+.telegram {
+  background: #0088cc;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: #2d3748;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #2d3748;
+  border: 2px solid #2d3748;
+}
+
+.btn-secondary:hover {
+  background: #2d3748;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .card-header {
+    padding: 40px 20px 30px;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .name {
+    font-size: 24px;
+  }
+  .card-body {
+    padding: 24px;
+  }
+  .action-buttons {
+    flex-direction: column;
+  }
+  .social-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 17px;
+  }
+}
