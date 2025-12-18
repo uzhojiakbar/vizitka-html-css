@@ -29,10 +29,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
 .card-header {
   background: linear-gradient(135deg, #2d3748 0%, #1e293b 100%);
   padding: 50px 30px 40px;
@@ -237,6 +233,8 @@ body {
 .btn-primary {
   background: #2d3748;
   color: white;
+  text-decoration: none;
+  outline: none;
 }
 
 .btn-primary:hover {
