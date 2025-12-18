@@ -276,3 +276,47 @@ body {
     font-size: 17px;
   }
 }
+
+.projects-section {
+  margin-bottom: 28px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.project {
+  background: #f1f5f9;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #475569;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.project:hover {
+  background: #2d3748;
+  color: white;
+}
+
+/* Oldingi CSS + qo‘shimcha mobil optimallashtirish */
+.social-links {
+  gap: 16px; /* Mobil uchun ko‘proq bo‘sh joy */
+}
+
+@media (max-width: 480px) {
+  .social-links {
+    gap: 12px;
+  }
+  .social-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+  .action-buttons {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+}
